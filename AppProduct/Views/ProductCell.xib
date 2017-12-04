@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="80" id="KGk-i7-Jjw" customClass="ProductCell" customModule="AppProduct" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="item 1: 120 $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hC-Os-xuU">
+                        <rect key="frame" x="16" y="4" width="288" height="22.5"/>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description :ZEZEFFSERGRTV" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrM-pl-nDx">
+                        <rect key="frame" x="16" y="28" width="288" height="41"/>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1hC-Os-xuU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="FtW-jj-3ZS"/>
+                    <constraint firstItem="1hC-Os-xuU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="LCj-07-fYg"/>
+                    <constraint firstAttribute="trailing" secondItem="1hC-Os-xuU" secondAttribute="trailing" constant="16" id="Mik-jf-dAR"/>
+                    <constraint firstItem="TrM-pl-nDx" firstAttribute="top" secondItem="1hC-Os-xuU" secondAttribute="bottom" constant="1" id="aRh-xT-xJk"/>
+                    <constraint firstAttribute="trailing" secondItem="TrM-pl-nDx" secondAttribute="trailing" constant="16" id="jQ0-qy-wPh"/>
+                    <constraint firstItem="TrM-pl-nDx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="kry-W2-vvx"/>
+                    <constraint firstItem="TrM-pl-nDx" firstAttribute="top" secondItem="1hC-Os-xuU" secondAttribute="bottom" constant="1" id="pFw-L4-MPx"/>
+                    <constraint firstAttribute="bottom" secondItem="TrM-pl-nDx" secondAttribute="bottom" constant="10.5" id="qoU-b3-ryY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionProduct" destination="TrM-pl-nDx" id="yMm-A5-VlQ"/>
+                <outlet property="titleProduct" destination="1hC-Os-xuU" id="xzw-Yw-4wU"/>
+            </connections>
+            <point key="canvasLocation" x="-657" y="26"/>
+        </tableViewCell>
+    </objects>
+</document>
